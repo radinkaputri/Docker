@@ -84,7 +84,7 @@ install_rclone() {
 
 # Install Python packages
 install_python_packages() {
-    pip3 install --break-system-packages --no-cache-dir -U setuptools uv
+    pip3 install --break-system-packages --no-cache-dir -U setuptools uv pyrogram tgcrypto
 }
 
 # Clone and build MEGA SDK
