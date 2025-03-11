@@ -84,7 +84,12 @@ install_rclone() {
 
 # Install Python packages
 install_python_packages() {
-    pip3 install --break-system-packages --no-cache-dir -U setuptools uv
+    pip3 install --break-system-packages --no-cache-dir -U \
+        setuptools uv pyrofork tgcrypto aiofiles aioshutil anytree apscheduler aria2p asyncio \
+        cloudscraper dnspython feedparser flask gevent google-api-python-client \
+        google-auth-httplib2 google-auth-oauthlib gunicorn httpx lxml motor natsort \
+        par2cmdline-turbo pillow psutil pymongo python-magic qbittorrent-api requests \
+        telegraph tenacity urllib3 uvloop xattr yt-dlp[default,curl-cffi]
 }
 
 # Clone and build MEGA SDK
